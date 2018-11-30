@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rahman Project 9</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Archivo:500" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script>
+      // Stellar parallax function
+      $(window).stellar();
+    </script>
+    <script>
+      // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 80) {
+          document.getElementById("navbar").style.padding = "5px 10px";
+          document.getElementById("navbar").style.backgroundColor = "#080706";
+          document.getElementById("logo").style.height = "100px";
+          document.getElementById("logo").style.width = "100px";
+        }
+        else {
+          document.getElementById("navbar").style.padding = "10px 10px";
+          document.getElementById("logo").style.height = "120px";
+          document.getElementById("logo").style.width = "120px";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <!--Section 1: Landing-->
+      <div id="landing" data-stellar-background-ratio="0.5">
+        <nav id="navbar">
+          <img src="images/mrahman_logo.png" alt="mrahman_logo" id="logo">
+            <div id="navbar-right">
+              <ul>
+                <li><a href="#landing">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="">Work</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+        </nav>
+        <h1 class="line anim-typewriter">Maisha Ru<span class="gold">me</span>lia Rahman</h1>
+      </div>
+    </header>
+    <main>
+      <!--Section 2: Education-->
+      <div id="education">
+        <h2>Education</h2>
+          <br />
+          <h4>Illinois Wesleyan University</h4>
+          <p>
+            Bachelor of Science <br />
+            Major: Computer Science <br />
+            Overall GPA: 4.0 <br />
+            Expected: May 2020 <br />
+          </p>
+          <br />
+          <h4>Honors</h4>
+          <p>
+            State Farm Scholarship Recipient<br />
+            IWU Alumni Scholarship Recipient<br />
+            Dean's List<br />
+            Edexcel Award of High Achievement<br />
+          </p>
+          <br />
+          <h4>Activities</h4>
+          <p>
+            Association for Computer Machinery (President)<br />
+            Institute of Electrical and Electronics Engineers<br />
+            Ethics Bowl Club<br />
+          </p>
+      </div>
+
+      <!--Section 3: Skills-->
+      <div id="skills">
+        <h2>Skills</h2>
+        <br />
+        <h4>Programming Skills </h4>
+        <p>Python | Java | JavaScript | HTML/CSS | C++ | PHP | SQL </p>
+        <br />
+        <h4>Relevant Coursework</h4>
+        <p>
+          CS 370 (to be named as CS 338) Artificial Intelligence (Spring 2018)<br />
+          CS 354 Algorithm Design and Analysis (Spring 2018)<br />
+          CS 253 Software Development (Fall 2017)<br />
+          CS 136 Computational Discrete Mathematics (Fall 2017)<br />
+          CS 135 Application of Sets, Logic and Recursion (Spring 2017)<br />
+          CS 128 Computer Science II (Spring 2017)<br />
+          CS 127 Computer Science I (Fall 2016)<br />
+      </div>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
